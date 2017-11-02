@@ -29,37 +29,42 @@ public interface Gui {
 	 * 
 	 * @return a Boolean
 	 */
-	public Boolean isBackEnable();
+	Boolean isBackEnable();
 	
 	/**
 	 * Is close item present
 	 * 
 	 * @return a Boolean
 	 */
-	public Boolean isCloseEnable();
+	Boolean isCloseEnable();
 	
 	/**
 	 * Get the back item slot
 	 * 
 	 * @return an Integer
 	 */
-	public Integer getBackPosition();
+	Integer getBackPosition();
 	
 	/**
 	 * Is back item present
 	 * 
 	 * @return a Boolean
 	 */
-	public Integer getClosePosition();
+	Integer getClosePosition();
 	
 	/**
-	 * 
+	 * Get the back item
 	 * 
 	 * @return A bukkit ItemStack
 	 */
-	public ItemStack getBackItem();
+	ItemStack getBackItem();
 
-	public ItemStack getCloseItem();
+	/**
+	 * Get the close item
+	 * 
+	 * @return A bukkit ItemStack
+	 */
+	ItemStack getCloseItem();
 	
 	/**
 	 * Open the gui to a player

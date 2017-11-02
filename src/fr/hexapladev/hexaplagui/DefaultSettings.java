@@ -78,5 +78,21 @@ public class DefaultSettings {
 		this.closeenable = closeenable;
 	}
 	
+	public void setBackPosition(Integer backposition) {
+		this.backposition = backposition;
+	}
+	
+	public void setClosePosition(Integer closeposition) {
+		this.closeposition = closeposition;
+	}
+	
+	public void setBackItem(ItemStack backitem) {
+		this.backitem = backitem;
+	}
+	
+	public void setCloseItem(ItemStack closeitem) {
+		this.closeitem = closeitem;
+	}
+	
 	
 }
