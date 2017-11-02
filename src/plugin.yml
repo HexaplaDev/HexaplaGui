@@ -1,0 +1,4 @@
+name: HexaplaGui
+version: 1.0
+authors: [NeoOSky, RedSpri] 
+main: fr.hexapladev.hexaplagui.HexaplaGui
