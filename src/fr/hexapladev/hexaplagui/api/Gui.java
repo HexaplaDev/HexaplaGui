@@ -1,6 +1,7 @@
 package fr.hexapladev.hexaplagui.api;
 
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 /**
  * A gui object
@@ -50,6 +51,15 @@ public interface Gui {
 	 * @return a Boolean
 	 */
 	public Integer getClosePosition();
+	
+	/**
+	 * 
+	 * 
+	 * @return A bukkit ItemStack
+	 */
+	public ItemStack getBackItem();
+
+	public ItemStack getCloseItem();
 	
 	/**
 	 * Open the gui to a player

@@ -1,8 +1,8 @@
 package fr.hexapladev.hexaplagui.api;
 
-import fr.hexapladev.hexaplagui.HexaplaGui;
-
 import org.bukkit.inventory.ItemStack;
+
+import fr.hexapladev.hexaplagui.HexaplaGui;
 
 /**
  * The factory of a Gui Object
@@ -21,48 +21,88 @@ public class GuiFactory {
 	private ItemStack closeitem = HexaplaGui.getDefaultSettings().getCloseItem();
 	
 	
-	public GuiFactory(String name) {
+	GuiFactory(String name) {
 		this.name = name;
 	}
 	
-	public GuiFactory(Integer lines) {
+	GuiFactory(Integer lines) {
 		this.lines = lines;
 	}
 	
-	public GuiFactory(String name, Integer lines) {
+	GuiFactory(String name, Integer lines) {
 		this.name = name;
 		this.lines = lines;
 	}
 	
-	public String getName() {
+	String getName() {
 		return name;
 	}
 	
-	public Integer getLines() {
+	Integer getLines() {
 		return lines;
 	}
 	
-	public Boolean isBackEnable() {
+	Boolean isBackEnable() {
 		return backenable;
 	}
 	
-	public Boolean isCloseEnable() {
+	Boolean isCloseEnable() {
 		return closeenable;
 	}
 	
-	public Integer getBackPosition() {
+	Integer getBackPosition() {
 		return backposition;
 	}
 	
-	public Integer getClosePosition() {
+	Integer getClosePosition() {
 		return closeposition;
 	}
 	
-	public ItemStack getBackItem() {
+	ItemStack getBackItem() {
 		return backitem;
 	}
 	
-	public ItemStack getCloseItem() {
+	ItemStack getCloseItem() {
 		return closeitem;
+	}
+	
+	public GuiFactory setName(String name) {
+		this.name = name;
+		return this;
+	}
+	
+	public GuiFactory setLines(Integer lines) {
+		this.lines = lines;
+		return this;
+	}
+	
+	public GuiFactory setBackEnable(Boolean backenable) {
+		this.backenable = backenable;
+		return this;
+	}
+	
+	public GuiFactory setCloseEnable(Boolean closeenable) {
+		this.closeenable = closeenable;
+		return this;
+	}
+	
+	public GuiFactory setBackPosition(Integer backposition) {
+		this.backposition = backposition;
+		return this;
+	}
+	
+	public GuiFactory setClosePosition(Integer closeposition) {
+		this.closeposition = closeposition;
+		return this;
+	}
+	
+	public GuiFactory setBackItem(ItemStack backitem) {
+		this.backitem = backitem;
+		return this;
+	}
+	
+	public GuiFactory setCloseItem(ItemStack closeitem) {
+		this.closeitem = closeitem;
+		return this;
 	}
 }
