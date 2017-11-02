@@ -6,6 +6,11 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+/**
+ * Defaults HexaplaGui Settings (can be edit)
+ * 
+ * @author RedSpri
+ */
 public class DefaultSettings {
 	private String name = "§r";
 	private Integer lines = 1;
@@ -55,6 +60,22 @@ public class DefaultSettings {
 	
 	public ItemStack getCloseItem() {
 		return closeitem;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setLines(Integer lines) {
+		this.lines = lines;
+	}
+	
+	public void setBackEnable(Boolean backenable) {
+		this.backenable = backenable;
+	}
+	
+	public void setCloseEnable(Boolean closeenable) {
+		this.closeenable = closeenable;
 	}
 	
 	
