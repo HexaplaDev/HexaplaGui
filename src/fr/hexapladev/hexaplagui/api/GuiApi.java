@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 import fr.hexapladev.hexaplagui.HexaplaGui;
 
@@ -27,6 +28,8 @@ public class GuiApi {
 			Boolean closeenable = factory.isCloseEnable();
 			Integer backposition = factory.getBackPosition();
 			Integer closeposition = factory.getClosePosition();
+			private ItemStack backitem = factory.getBackItem()
+			private ItemStack closeitem = factory.
 			
 			@Override
 			public String getName() {
@@ -36,12 +39,6 @@ public class GuiApi {
 			@Override
 			public Integer getLinesCount() {
 				return this.lines;
-			}
-
-			@Override
-			public void openGui(Player p) {
-				// TODO Auto-generated method stub
-				
 			}
 			
 		};
